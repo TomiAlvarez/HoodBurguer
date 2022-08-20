@@ -412,7 +412,7 @@ hr {
 
 .footerTitulo{
     grid-area: footerTitulo;
-    margin-left: 150px;
+    margin-left: 130px;
 }
 
 .footer a{
@@ -434,6 +434,14 @@ hr {
     
     .tarjetaNosotros img{
         width: 400px;
+    }
+
+    .footer{
+        grid-template-columns: 4fr 1fr;
+    }
+
+    .footerTitulo{
+        margin-left: 50px;
     }
 
 }
@@ -492,9 +500,13 @@ hr {
         padding: 30px;
     }
 
+    hr{
+        margin-top: 90px;
+    }
+
     .footer{
-        grid-template-columns: 4fr 1fr;
-        font-size: 18;
+        grid-template-columns: 3fr 1fr;
+        margin-top: 30px;
     }
 
 }
@@ -578,6 +590,14 @@ hr {
     .footer{
         grid-template-columns: 2fr 1fr;
         font-size: 13px;
+    }
+
+    .footerTitulo{
+        margin-left: 10px;
+    }
+
+    .footerItem{
+        margin-right: 10px;
     }
 
 }
