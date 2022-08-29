@@ -14,14 +14,14 @@
     <!--Menú de navegación-->
     <nav class="encabezado navbar navbar-expand-lg">
         <div class="container-fluid">
-          <div class="divLogo col-4">
-            <img class="logo" src="./fotos/logotemporal.png" alt="HoodBurguer©">
-        </div>
+            <a href="./index.html" class="divLogo">
+               <img class="logo" src="./fotos/logotemporal.png" alt="HoodBurguer©">
+            </a>
         <div class="divBoton col-4">    
-          <a href="./menu.html">
+          <a href="https://wa.me/1140978790?text=Hola,%20quiero%20realizar%20un%20pedido." target="_blank">
               <button class="boton"><span>PEDÍ YA</span></button>
           </a>
-      </div>
+        </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -33,51 +33,83 @@
                 <li><a class="nav-link" href="contacto.html">Contacto</a></li>
                 <li><a class="nav-link" href="sobre-nosotros.html">Nosotros</a></li>
                 <li><a class="nav-link" href="preguntas-frecuentes.html">FAQ</a></li>
-              </ul></li>
+              </ul>
             </div>
           </div>
+        </div>
+      </nav>
+      <nav class="encabezado">
+        <div class="navbar-menu">
+            <ul>
+                <li class="botonMenu"><a href="#carne">Carne</a></li>
+                <li class="botonMenu"><a href="#pollo">Pollo</a></li>
+              </ul>
         </div>
       </nav>
     <h1 class="tituloPrincipal">Menú</h1>
     <!--Lista de productos-->
     <div class="formularioMenu">
+        <h2 id="carne" class="seccionMenu">Carne</h2>
         <section class="carta">
             <div class="carta__tarjeta">
-               <h2 class="carta__titulo">Kansas Burguer</h2>
+               <h3 class="carta__titulo">Kansas Burguer</h3>
                 <img class="carta__imagen" src="./fotos/hamburguesa-1.png" alt="KansasBurguer">
             </div>
             <div class="carta__tarjeta">
-                <h2 class="carta__titulo">Keota Burguer</h2>
+                <h3 class="carta__titulo">Keota Burguer</h3>
                 <img class="carta__imagen" src="./fotos/hamburguesa-2.png" alt="KeotaBurguer">
             </div>
             <div class="carta__tarjeta">
-                <h2 class="carta__titulo">San Francisco Burguer</h2>
+                <h3 class="carta__titulo">San Francisco Burguer</h3>
                 <img class="carta__imagen" src="./fotos/hamburguesa-3.png" alt="SanFranciscoBurguer">
             </div>
             <div class="carta__tarjeta"> 
-                <h2 class="carta__titulo">California Burguer</h2>
+                <h3 class="carta__titulo">California Burguer</h3>
                 <img class="carta__imagen" src="./fotos/hamburguesa-4.png" alt="CaliforniaBurguer">
             </div>
             <div class="carta__tarjeta">
-                <h2 class="carta__titulo">What Cheer Burguer</h2>
+                <h3 class="carta__titulo">What Cheer Burguer</h3>
                 <img class="carta__imagen" src="./fotos/hamburguesa-5.png" alt="WhatCheerBurguer">
             </div>
             <div class="carta__tarjeta">
-                <h2 class="carta__titulo">Sully Burguer</h2>
+                <h3 class="carta__titulo">Sully Burguer</h3>
                 <img class="carta__imagen" src="./fotos/hamburguesa-6.png" alt="SullyBurguer">
             </div>
             <div class="carta__tarjeta">
-                <h2 class="carta__titulo">Columbia Burguer</h2>
+                <h3 class="carta__titulo">Columbia Burguer</h3>
                 <img class="carta__imagen" src="./fotos/hamburguesa-7.png" alt="ColumbiaBurguer">
             </div>
             <div class="carta__tarjeta">
-                <h2 class="carta__titulo">Milo Burguer</h2>
+                <h3 class="carta__titulo">Milo Burguer</h3>
                 <img class="carta__imagen" src="./fotos/hamburguesa-8.png" alt="MiloBurguer">
             </div>
             <div class="carta__tarjeta">
-                <h2 class="carta__titulo">Zion Burguer</h2>
+                <h3 class="carta__titulo">Zion Burguer</h3>
                 <img class="carta__imagen" src="./fotos/hamburguesa-9.png" alt="ZionBurguer">
             </div>
+        </section>
+        <h2 id="pollo" class="seccionMenu">Pollo</h2>
+        <section class="carta">
+            <div class="carta__tarjeta">
+                <h3 class="carta__titulo">Kingman Chicken</h3>
+                 <img class="carta__imagen" src="./fotos/pollo-1.png" alt="KingmanChicken">
+             </div>
+             <div class="carta__tarjeta">
+                 <h3 class="carta__titulo">Holyroad Chicken</h3>
+                 <img class="carta__imagen" src="./fotos/pollo-2.png" alt="HolyroadChicken">
+             </div>
+             <div class="carta__tarjeta">
+                 <h3 class="carta__titulo">Max Chicken</h3>
+                 <img class="carta__imagen" src="./fotos/pollo-3.png" alt="MaxChicken">
+             </div>
+             <div class="carta__tarjeta"> 
+                 <h3 class="carta__titulo">Otis Chicken</h3>
+                 <img class="carta__imagen" src="./fotos/pollo-4.png" alt="OtisChicken">
+             </div>
+             <div class="carta__tarjeta">
+                 <h3 class="carta__titulo">Colby Chicken</h3>
+                 <img class="carta__imagen" src="./fotos/pollo-5.png" alt="ColbyChicken">
+             </div>
         </section>
     </div>
     <hr>
@@ -87,9 +119,9 @@
         </div>
         <div class="redes">
             <ul>
-                <li><a href="#" class="whatsapp"><i class="fa fa-whatsapp"></i></a></li>
-                <li><a href="https://instagram.com/HoodBurger_" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" class="whatsapp" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                <li><a href="https://instagram.com/HoodBurger_" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
             </ul>
         </div>
     </footer>

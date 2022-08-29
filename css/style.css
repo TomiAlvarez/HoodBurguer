@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
+@font-face {
+    font-family: Flame;
+    src: url(.././fuentes/FlameSans.otf);
+}
 
 *{
     margin: 0;
@@ -14,7 +18,6 @@ body{
 
 .encabezado{
     background-color: rgb(122, 75, 44);
-    padding: 5px;
 }
 
 #headerIndex{
@@ -40,8 +43,8 @@ body{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 130px;
-    height: 45px;
+    width: 110px;
+    height: 42px;
     background:rgb(253, 219, 156);
     color: black;
     font-size: 20px;
@@ -89,7 +92,7 @@ body{
     list-style-type: none;
     display: flex;
     gap: 20px;
-    font-size: 25px;
+    font-size: 17px;
 }
 
 .navbar-nav ul li{
@@ -102,18 +105,21 @@ body{
     color: rgb(236, 235, 235);
     text-decoration: none;
     text-align: center;
-    margin-top: 15px;
-    padding: 0;
+    margin-top: 25px;
+    font-family: Flame;
+    padding: 3px;
     gap: 0;
+    border-radius: 35px;
 }
 
 .navbar-nav ul li a:hover{
-    border-bottom: 5px solid rgb(236, 235, 235);
-    color: rgb(236, 235, 235);
+    background-color: rgb(236, 235, 235);
+    color: rgb(97, 60, 35);
 }
 
 .navbar-nav ul .item a{
-    border-bottom: 5px solid rgb(236, 235, 235);
+    background-color: rgb(236, 235, 235);
+    color: rgb(97, 60, 35);
 }
 
 #menuIndex ul li a{
@@ -121,26 +127,32 @@ body{
 }
 
 #menuIndex ul li a:hover{
-    border-bottom: 5px solid rgb(97, 60, 35);
+    background-color: rgb(97, 60, 35);
+    color: rgb(236, 235, 235);
+}
+
+.botonMenu a{
+    
 }
 
 .divLogo{
     display: flex;
     grid-area: logo;
+    margin-right: 30%;
 }
 
 .logo{
-    width: 100px;
+    width: 70px;
 }
 
 .tituloPrincipal{
     font-size: 100px;
     display: flex;
     justify-content: center;
-    margin: 0px;
+    margin-top: 20px;
     background-color: rgb(255, 254, 221);
     color: rgb(122, 75, 44);
-    padding: 40px 0px 40px 0px;
+    padding: 40px 0px 30px 0px;
     text-align: center;
 }
 
@@ -165,19 +177,62 @@ body{
     margin-top: 20px;
 }
 
+.navbar-menu{
+
+    background-color: rgb(146, 92, 56);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
+.navbar-menu ul{
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    font-size: 15px;
+    margin-right: 30px;
+}
+
+.navbar-menu ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-menu ul li a{
+    color: rgb(236, 235, 235);
+    text-decoration: none;
+    text-align: center;
+    font-family: Flame;
+    gap: 0;
+    margin-top: 30px;
+    padding-bottom: 8px;
+}
+
+.navbar-menu ul li a:hover{
+    border-bottom: 1px solid rgb(236, 235, 235);
+}
+
 .formularioMenu{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+}
+
+.seccionMenu{
+    font-size: 50px;
+    margin-top: 50px;
+    color: #502314;
+    display: flex;
+    margin-right: 60%;
 }
 
 .carta{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
     gap: 150px;
-    margin: 150px 0px 150px 0px;
+    margin: 50px 0px 60px 0px;
 }
 
 .carta__tarjeta{
@@ -193,17 +248,18 @@ body{
 .carta__titulo {
     text-align: center; 
     font-size: 35px;  
+    color: #502314;
 }
 
 .carta__imagen {
     height: 220px;
     border-radius: 8px;
     align-items: center;
-    transition: .8s ease all;
+    transition: .4s ease all;
 }
 
 .carta__imagen:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .tarjetaNosotros{
@@ -412,6 +468,10 @@ hr {
 
 @media screen and (max-width:1250px) { 
 
+    .divLogo{
+        margin-right: 20%;
+    }
+
     .inicio{
         margin: 30px;
     }
@@ -446,33 +506,26 @@ hr {
     .navbar-nav ul{
         flex-flow: column;
         gap: 0;
-        align-items: center;
-        margin-right: 30px;
+        margin-top: 20px;
+        margin-right: 88%;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 
     .navbar-nav ul li{
         padding: 0;
         margin: 0;
     }
+    
+    .navbar-nav ul li a{
+        padding-right: 10px;
+        padding-left: 10px;
+        text-align: start;
+    }
+
 }
 
 @media screen and (max-width:900px) {
-
-    .navbar-nav{
-        justify-content: center;
-        align-items: center;
-        margin-top: 0;
-    }
-
-    .navbar-nav ul{
-        margin-top: 50px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .logo{
-        width: 80px;
-    }
 
     .divBoton{
         justify-content: center;
@@ -483,9 +536,18 @@ hr {
         padding-bottom: 0px;
     }
 
+    .seccionMenu{
+        margin-top: 30px;
+        margin-right: 60%;
+    }
+    
     .carta{
         gap: 50px 23px;
-        margin: 80px 0px 50px 0px;
+        margin: 25px 0px 10px 0px;
+    }
+
+    .carta__tarjeta{
+        gap: 0px;
     }
 
     .carta__titulo {
@@ -533,6 +595,10 @@ hr {
 
 @media screen and (max-width:680px) {
 
+    .navbar-nav ul{
+        margin-right: 75%;
+    }
+
     .footerTitulo{
         margin-left: 15px;
     }
@@ -565,10 +631,6 @@ hr {
 
 @media screen and (max-width:525px) {
 
-    .divLogo{
-        margin-left: 0px;
-    }
-
     .divBoton{
         justify-content: center;
     }
@@ -577,24 +639,11 @@ hr {
         display: none;
     }
 
-    .caja{
-        margin-bottom: 50px;
+    .seccionMenu{
+        margin-top: 18px;
+        margin-right: 70%;
     }
-
-    .tarjeta{
-        width: 300px;
-        height: 300px;
-        margin-top: 20px;
-    }
-
-    .tarjeta__titulo{
-        margin-top: 30px;
-        font-size: 40px;
-    }
-
-    .tarjeta__imagen{
-        height: 150px;
-    }
+    
 
     .carta{
         gap: 80px 30px;
@@ -606,7 +655,7 @@ hr {
     }
 
     .carta__titulo{
-        font-size: 20px;
+        font-size: 23px;
     }
 
     .carta__imagen {
