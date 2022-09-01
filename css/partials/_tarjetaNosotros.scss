@@ -1,0 +1,17 @@
+.tarjetaNosotros{
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    margin: 50px 0px 170px 0px;
+    box-shadow: 7px 13px 40px #000;
+
+    p{
+        font-size: 20px;
+        padding: 50px;
+        color: $secondaryColor;
+        text-align: center;
+        }
+
+    img{
+        width: 500px;
+        }
+    }

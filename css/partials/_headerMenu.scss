@@ -1,0 +1,42 @@
+.menu-fixed{
+    z-index: 1000;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, .5);
+    position: sticky;
+    top: 0;
+
+    .navbar-menu{
+        background-color: $mainDarkColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px; 
+
+        ul{
+            list-style-type: none;
+            display: flex;
+            gap: 50px;
+            font-size: 15px;
+            margin-right: 30px;
+
+            li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a{
+                    color: $secondaryColor;
+                    text-decoration: none;
+                    text-align: center;
+                    font-family: Flame;
+                    gap: 0;
+                    margin-top: 30px;
+                    padding-bottom: 8px;
+
+                &:hover{
+                border-bottom: 1px solid $secondaryColor;
+                }
+            }
+        }
+    }
+}  
+}

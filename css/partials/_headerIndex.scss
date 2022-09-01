@@ -1,0 +1,32 @@
+#headerIndex{
+    background-color: $mainColor;
+
+    #botonIndex{
+
+        a{
+
+            button{
+            background: rgb(172, 136, 70);
+            color: white;
+            }
+        }
+    }
+
+    #menuIndex{ 
+        
+        ul{ 
+            
+            li{ 
+                
+                a{
+                color: rgb(97, 60, 35);
+    
+                &:hover{
+                background-color: rgb(97, 60, 35);
+                color: $secondaryColor;
+                }
+            }
+        }
+    }
+}
+}

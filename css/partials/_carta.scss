@@ -1,0 +1,55 @@
+.formularioMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .seccionMenu{
+        font-size: 50px;
+        margin-top: 50px;
+        color: #502314;
+        display: flex;
+        margin-right: 60%;
+    }
+
+    .carta{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 150px;
+        margin: 50px 0px 60px 0px;
+
+        .carta__tarjeta{
+            width: 250px;
+            height: 250px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-flow: column;
+            
+            .carta__titulo {
+                text-align: center; 
+                font-size: 35px;  
+                color: #502314;
+                }
+
+            .carta__imagen {
+                height: 220px;
+                border-radius: 8px;
+                align-items: center;
+                transition: .4s ease all;
+        
+            &:hover{
+                transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

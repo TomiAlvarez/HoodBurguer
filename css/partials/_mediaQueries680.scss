@@ -1,0 +1,29 @@
+@media screen and (max-width:680px) {
+
+    .navbar-nav ul{
+        margin-right: 75%;
+    }
+
+    .mFooter{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:"redes"
+                            "footerTitulo";
+        font-size: 13px;
+    }
+
+    .footerTitulo{
+        margin-left: 0px;
+        margin: auto;
+        text-align: center;
+        width: 70%;
+    }
+
+    .redes{
+        margin-left: 0px;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+}

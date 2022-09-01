@@ -1,0 +1,55 @@
+.seccionPreg{
+    display: flex;  
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+    .seccionPreg__div{
+        background-color: rgb(39, 38, 38, 0.814);
+        width: 450px;
+        height: 200px;
+        margin: 70px 100px 20px 100px;
+        padding: 20px;
+        border-radius: 8px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "pregTitulo respuesta"
+                             "pregTitulo respuesta";
+        box-shadow: 7px 13px 40px #000;
+
+    &:hover{
+        box-shadow: none;
+        transform: scale(1.03);
+        }
+
+        .seccionPreg__div__titulo{
+            height: 25px;
+            width: 145px;
+            background-color: rgb(172, 136, 70);
+            border-radius: 10px;
+            font-size: 16px;
+            padding: 4px;
+            color: black;
+            grid-area: pregTitulo;
+            display: flex;
+            flex-flow: row;
+            }
+
+        .seccionPreg__div__p{
+            height: 120px;
+            width: 200px;
+            border-radius: 10px;
+            text-align:justify;
+            background-color: rgb(238, 200, 131);
+            font-size: 13px;
+            padding: 5px;
+            margin-top: 40px;
+            grid-area: respuesta;
+            display: flex;
+            flex-flow: row;
+            }
+        }
+    }
+
+

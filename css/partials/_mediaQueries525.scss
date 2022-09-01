@@ -1,0 +1,61 @@
+@media screen and (max-width:525px) {
+
+    .divBoton{
+        justify-content: center;
+    }
+
+    .divBoton a button{
+        display: none;
+    }
+
+    .seccionMenu{
+        margin-top: 18px;
+        margin-right: 70%;
+    }
+    
+
+    .carta{
+        gap: 80px 30px;
+    }
+
+    .carta__tarjeta{
+        width: 150px;
+        height: 150px;
+    }
+
+    .carta__titulo{
+        font-size: 23px;
+    }
+
+    .carta__imagen {
+        height: 120px;
+    }
+
+    .form{
+        width: 300px;
+        box-shadow: 3px 6px 20px #000;
+    }
+    
+    .form__item{
+        width: 90%;
+    }
+
+    .form form textarea{
+        height: 130px;
+    }
+
+    .seccionPreg__div{
+        width: 320px;
+        height: 180px;
+        padding: 13px;
+    }
+    
+    .seccionPreg__div__p{
+        height: 115px;
+        width: 150px;
+        padding: 5px;
+        margin-top: 40px;
+        font-size: 12px;
+    }
+
+}

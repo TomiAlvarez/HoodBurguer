@@ -1,0 +1,23 @@
+.inicio{
+    margin: 80px;
+
+    .card{
+        background-color: $mainDarkColor;
+        margin: 5px;
+        color: $mainColor;
+
+        img{
+            height: 55%;
+            }
+        }
+
+    .card-body{
+
+        .btn{
+        width: 120px;
+        background-color: $mainColor;
+        color: rgb(122, 75, 44);
+        margin-top: 20px;
+        }
+    }
+}
