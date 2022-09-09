@@ -1,33 +1,43 @@
 @media screen and (max-width:1250px) { 
 
-    .divLogo{
-        margin-right: 20%;
-    }
+    .encabezado{
+
+        .divLogo{
+            margin-right: 20%;
+            }
+
+        }
 
     .inicio{
         margin: 30px;
     }
 
-    .carta{
-        grid-template-columns: repeat(2,1fr);
-        column-gap: 200px;
-    }
+    .formularioMenu{
+
+        .carta{
+            grid-template-columns: repeat(2,1fr);
+            column-gap: 200px;
+            
+            }
+        }
     
     .tarjetaNosotros img{
         width: 400px;
     }
 
     .mFooter{
-        grid-template-columns: 4fr 1fr;
+
+        .redes{
+            margin-left: 40%;
+        }
     }
 
-    .footerTitulo{
-        margin-left: 50px;
-        width: 80%;
-    }
+    .hFooter{
 
-    .redes{
-        margin-left: 20px;
+        .hFItems{
+            margin-left: 55%;
+        }
+
     }
 
 }

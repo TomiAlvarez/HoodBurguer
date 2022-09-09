@@ -3,6 +3,19 @@
   font-family: Flame;
   src: url(.././fuentes/FlameSans.otf);
 }
+.mFooter .redes ul li a {
+  display: block;
+  background: rgb(236, 235, 235);
+  color: rgb(122, 75, 44);
+  line-height: 37px;
+  font-size: 18px;
+  text-decoration: none;
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+  border-radius: 50%;
+  margin-left: 8px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -89,7 +102,7 @@ body {
   list-style-type: none;
   display: flex;
   gap: 20px;
-  font-size: 17px;
+  font-size: 16px;
 }
 .encabezado .navbar-nav ul .item a {
   background-color: rgb(236, 235, 235);
@@ -104,9 +117,10 @@ body {
   color: rgb(236, 235, 235);
   text-decoration: none;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 20px;
   font-family: Flame;
   padding: 3px;
+  padding-bottom: 1px;
   gap: 0;
   border-radius: 35px;
 }
@@ -146,7 +160,7 @@ body {
 }
 .inicio .card {
   background-color: rgb(146, 92, 56);
-  margin: 5px;
+  margin: 12px;
   color: rgb(255, 254, 221);
 }
 .inicio .card img {
@@ -157,6 +171,10 @@ body {
   background-color: rgb(255, 254, 221);
   color: rgb(122, 75, 44);
   margin-top: 20px;
+}
+.inicio .card-body .btn:hover {
+  background-color: rgb(122, 75, 44);
+  color: rgb(255, 254, 221);
 }
 
 .menu-fixed {
@@ -191,7 +209,7 @@ body {
   text-align: center;
   font-family: Flame;
   gap: 0;
-  margin-top: 30px;
+  margin-top: 28px;
   padding-bottom: 8px;
 }
 .menu-fixed .navbar-menu ul li a:hover {
@@ -210,6 +228,9 @@ body {
   display: flex;
   margin-right: 60%;
 }
+.formularioMenu span {
+  margin-bottom: 50px;
+}
 .formularioMenu .carta {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -220,14 +241,15 @@ body {
   width: 250px;
   height: 250px;
   display: flex;
-  gap: 20px;
   align-items: center;
-  flex-flow: column;
+  flex-direction: column;
+  gap: 20px;
 }
 .formularioMenu .carta .carta__tarjeta .carta__titulo {
   text-align: center;
-  font-size: 35px;
+  font-size: 23px;
   color: #502314;
+  font-family: Flame;
 }
 .formularioMenu .carta .carta__tarjeta .carta__imagen {
   height: 220px;
@@ -256,6 +278,7 @@ body {
 }
 
 .seccionPreg {
+  font-family: Flame;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -280,23 +303,22 @@ body {
 }
 .seccionPreg .seccionPreg__div .seccionPreg__div__titulo {
   height: 25px;
-  width: 145px;
-  background-color: rgb(172, 136, 70);
+  width: 182px;
   border-radius: 10px;
-  font-size: 16px;
-  padding: 4px;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 5px;
   color: black;
   grid-area: pregTitulo;
   display: flex;
   flex-flow: row;
 }
 .seccionPreg .seccionPreg__div .seccionPreg__div__p {
-  height: 120px;
+  height: 122px;
   width: 200px;
   border-radius: 10px;
   text-align: justify;
-  background-color: rgb(238, 200, 131);
-  font-size: 13px;
+  font-size: 11px;
   padding: 5px;
   margin-top: 40px;
   grid-area: respuesta;
@@ -304,104 +326,211 @@ body {
   flex-flow: row;
 }
 
+.seccionPreg__div__titulo {
+  background-color: rgb(172, 136, 70);
+}
+
+.seccionPreg__div__p {
+  background-color: rgb(238, 200, 131);
+}
+
 .form {
-  width: 500px;
+  font-family: Segoe UI, Segoe WP, Tahoma, Arial, sans-serif;
+  width: 45%;
   background-color: rgba(0, 0, 0, 0.829);
   padding: 30px;
   margin: auto;
   margin-top: 100px;
   margin-bottom: 100px;
-  border-radius: 3px;
   color: white;
   box-shadow: 7px 13px 40px #000;
 }
+.form .detalles {
+  padding: 50px;
+  font-size: 13px;
+}
+.form hr {
+  background-color: white;
+}
+.form .ASpan {
+  color: rgb(245, 86, 86);
+}
 .form .form__titulo {
-  font-size: 50px;
-  text-align: center;
-  margin-bottom: 40px;
+  font-size: 25px;
+  margin: 15px 0 40px 10%;
 }
 .form form {
   display: flex;
   flex-flow: column;
   align-items: center;
+  padding: 3%;
 }
-.form form .form__item {
-  width: 50%;
-  margin: 15px;
-  background: rgb(35, 35, 35);
-  padding: 10px;
-  font-size: 16px;
-  font-family: "Courier New", Courier, monospace;
-  border-radius: 4px;
-  border: 1px solid rgb(224, 224, 224);
-  resize: none;
+.form form .formItem {
+  width: 100%;
+  padding-bottom: 10%;
+}
+.form form .formItem h3 {
+  font-size: 20px;
+  padding-bottom: 20px;
+  margin-left: 40px;
+}
+.form form .formItem .input__item {
+  width: 90%;
+  padding: 1%;
+  margin-left: 8%;
+  background-color: rgba(0, 0, 0, 0.623);
   color: white;
+  border: 1px solid white;
+  font-size: 15px;
 }
-.form form textarea {
-  height: 180px;
+.form form .formItem .divRadio {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form form .formItem .divRadio span {
+  display: flex;
+  font-size: 19px;
+  width: 300px;
+  height: 35px;
+  align-items: center;
+  margin-left: 50px;
+}
+.form form .formItem .divRadio span .radio {
+  margin-right: 5px;
+}
+.form form .formItem textarea {
+  width: 90%;
+  height: 100px;
+  padding: 1%;
+  margin-left: 8%;
+  background-color: rgba(0, 0, 0, 0.623);
+  color: white;
+  border: 1px solid white;
+  resize: none;
+}
+.form form .consulta {
+  padding-top: 60px;
+  padding-bottom: 0;
 }
 .form form button {
-  margin-top: 30px;
   border: 1px solid white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 16px;
 }
 
-hr {
+.hFooter {
+  width: 100%;
+  background-color: rgb(80, 35, 20);
+  font-family: Flame;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "hFTitulo hFItems" "hr hr";
+  height: 248px;
+  margin-top: 80px;
+}
+.hFooter hr {
   height: 1px;
   width: 70%;
   margin-left: 15%;
-  background-color: rgb(88, 55, 32);
+  background-color: rgb(236, 235, 235);
   border: none;
-  margin-top: 60px;
+  grid-area: hr;
+}
+.hFooter .hFTitulo {
+  margin-left: 30%;
+  grid-area: hFTitulo;
+  padding-top: 50px;
+  width: 350px;
+}
+.hFooter .hFTitulo div {
+  display: flex;
+}
+.hFooter .hFTitulo div h4 {
+  font-size: 40px;
+  color: rgb(236, 235, 235);
+  font-weight: bolder;
+}
+.hFooter .hFTitulo div span {
+  font-size: 10px;
+  color: rgb(236, 235, 235);
+}
+.hFooter .hFItems {
+  width: auto;
+  margin-left: 62%;
+  padding-top: 50px;
+  align-items: center;
+  grid-area: hFItems;
+}
+.hFooter .hFItems h4 {
+  color: rgb(236, 235, 235);
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.hFooter .hFItems div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.hFooter .hFItems div a {
+  text-decoration: none;
+  color: rgb(236, 235, 235);
 }
 
 .mFooter {
-  background-color: rgb(255, 254, 221);
-  color: rgb(122, 75, 44);
-  font-family: "Times New Roman", Times, serif;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  padding: 10px 25px 10px 25px;
+  width: 100%;
+  background-color: rgb(80, 35, 20);
+  color: rgb(236, 235, 235);
+  font-family: Flame;
   display: grid;
-  grid-template-columns: 5fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: "footerTitulo redes";
   align-items: center;
   justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 15px;
 }
 .mFooter .footerTitulo {
   grid-area: footerTitulo;
-  margin-left: 30px;
+  margin-left: 30%;
+  width: auto;
   display: flex;
   align-items: center;
-  font-size: small;
+}
+.mFooter .footerTitulo h3 {
+  font-size: 20px;
+  margin-top: 8px;
+}
+.mFooter .redes {
+  display: flex;
+  width: auto;
+  margin-left: 52%;
 }
 .mFooter .redes ul {
-  padding-left: 0;
   align-items: center;
   justify-content: center;
+  margin-top: 12px;
 }
 .mFooter .redes ul li {
   display: inline-block;
-  width: 37px;
-  height: 37px;
   text-align: center;
   grid-area: redes;
-}
-.mFooter .redes ul li a {
-  display: block;
-  background: rgb(122, 75, 44);
-  color: rgb(255, 254, 221);
-  line-height: 37px;
-  font-size: 18px;
-  text-decoration: none;
-  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.2);
-  transition: 0.2s;
+  justify-content: center;
 }
 .mFooter .redes ul li a:hover {
   transform: translateY(-3px) scale(1.05);
   box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
   filter: none;
+  color: rgb(236, 235, 235);
+}
+.mFooter .redes ul li a i {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
 }
 .mFooter .redes ul li .whatsapp:hover {
   background: rgb(7, 94, 84);
@@ -414,18 +543,21 @@ hr {
 }
 
 @media screen and (max-width: 1450px) {
-  .footerTitulo {
-    margin-left: 80px;
+  .hFooter .hFItems {
+    margin-left: 58%;
+  }
+  .mFooter .redes {
+    margin-left: 45%;
   }
 }
 @media screen and (max-width: 1250px) {
-  .divLogo {
+  .encabezado .divLogo {
     margin-right: 20%;
   }
   .inicio {
     margin: 30px;
   }
-  .carta {
+  .formularioMenu .carta {
     grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: 200px;
          column-gap: 200px;
@@ -433,19 +565,15 @@ hr {
   .tarjetaNosotros img {
     width: 400px;
   }
-  .mFooter {
-    grid-template-columns: 4fr 1fr;
+  .mFooter .redes {
+    margin-left: 40%;
   }
-  .footerTitulo {
-    margin-left: 50px;
-    width: 80%;
-  }
-  .redes {
-    margin-left: 20px;
+  .hFooter .hFItems {
+    margin-left: 55%;
   }
 }
 @media screen and (max-width: 992px) {
-  .navbar-nav ul {
+  .encabezado .navbar-nav ul {
     flex-flow: column;
     gap: 0;
     margin-top: 20px;
@@ -453,40 +581,43 @@ hr {
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .navbar-nav ul li {
+  .encabezado .navbar-nav ul li {
     padding: 0;
     margin: 0;
   }
-  .navbar-nav ul li a {
+  .encabezado .navbar-nav ul li a {
     padding-right: 10px;
     padding-left: 10px;
     text-align: start;
   }
+  .form {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 900px) {
-  .divBoton {
+  .encabezado .divBoton {
     justify-content: center;
   }
   .tituloPrincipal {
     padding-top: 30px;
     padding-bottom: 0px;
   }
-  .seccionMenu {
+  .formularioMenu .seccionMenu {
     margin-top: 30px;
     margin-right: 60%;
   }
-  .carta {
+  .formularioMenu .carta {
     gap: 50px 23px;
     margin: 25px 0px 10px 0px;
   }
-  .carta__tarjeta {
+  .formularioMenu .carta .carta__tarjeta {
     gap: 0px;
   }
-  .carta__titulo {
+  .formularioMenu .carta .carta__tarjeta .carta__titulo {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
   }
-  .carta__imagen {
+  .formularioMenu .carta .carta__tarjeta .carta__imagen {
     height: 170px;
   }
   .tarjetaNosotros {
@@ -501,87 +632,131 @@ hr {
   .tarjetaNosotros p {
     padding: 30px;
   }
-  hr {
-    margin-top: 90px;
+  .hFooter hr {
+    width: 85%;
+    margin-left: 7.5%;
   }
-  .mFooter {
-    grid-template-columns: 3fr 1fr;
-    margin-top: 30px;
+  .hFooter .hFTitulo {
+    margin-left: 15%;
   }
-  .footerTitulo {
-    margin-left: 30px;
+  .hFooter .hFItems {
+    margin-left: 67%;
   }
-  .redes {
-    margin-left: 20px;
+  .mFooter .footerTitulo {
+    margin-left: 15%;
+  }
+  .mFooter .footerTitulo h3 {
+    font-size: 15px;
+  }
+  .mFooter .redes {
+    margin-left: 42%;
   }
 }
 @media screen and (max-width: 680px) {
-  .navbar-nav ul {
+  .encabezado .navbar-nav ul {
     margin-right: 75%;
   }
+  .hFooter {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "hFTitulo" "hFItems" "hr";
+  }
+  .hFooter .hFTitulo {
+    margin-left: 8%;
+  }
+  .hFooter .hFItems {
+    margin-left: 8%;
+  }
   .mFooter {
+    padding-top: 125px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "redes" "footerTitulo";
     font-size: 13px;
   }
-  .footerTitulo {
-    margin-left: 0px;
-    margin: auto;
+  .mFooter .footerTitulo {
+    margin-left: 20%;
     text-align: center;
-    width: 70%;
+    width: 60%;
   }
-  .redes {
-    margin-left: 0px;
+  .mFooter .redes {
+    margin: 0;
+    margin-right: 7%;
     text-align: center;
     justify-content: center;
-    margin-bottom: 40px;
   }
 }
 @media screen and (max-width: 525px) {
-  .divBoton {
-    justify-content: center;
-  }
   .divBoton a button {
     display: none;
   }
-  .seccionMenu {
+  .formularioMenu .seccionMenu {
     margin-top: 18px;
     margin-right: 70%;
   }
-  .carta {
+  .formularioMenu .carta {
     gap: 80px 30px;
   }
-  .carta__tarjeta {
+  .formularioMenu .carta .carta__tarjeta {
     width: 150px;
     height: 150px;
   }
-  .carta__titulo {
-    font-size: 23px;
+  .formularioMenu .carta .carta__tarjeta .carta__titulo {
+    font-size: 15px;
   }
-  .carta__imagen {
+  .formularioMenu .carta .carta__tarjeta .carta__imagen {
     height: 120px;
   }
-  .form {
-    width: 300px;
-    box-shadow: 3px 6px 20px #000;
+  .form .detalles {
+    padding: 20px;
+    font-size: 10px;
   }
-  .form__item {
-    width: 90%;
+  .form form {
+    padding: 3% 0 3% 0;
+    margin-bottom: 50px;
   }
-  .form form textarea {
-    height: 130px;
+  .form form .formItem h3 {
+    margin-left: 0px;
   }
-  .seccionPreg__div {
+  .form form .formItem .input__item {
+    width: 100%;
+    margin-left: 0;
+  }
+  .form form .formItem .divRadio span {
+    font-size: 17px;
+    width: 250px;
+    margin-left: 10px;
+  }
+  .form form .formItem textarea {
+    width: 100%;
+    margin-left: 0;
+  }
+  .form form button {
+    margin-top: 50px;
+    font-size: 16px;
+  }
+  .seccionPreg .seccionPreg__div {
     width: 320px;
     height: 180px;
     padding: 13px;
   }
-  .seccionPreg__div__p {
+  .seccionPreg .seccionPreg__div .seccionPreg__div__titulo {
+    height: 25px;
+    width: 145px;
+    font-size: 10px;
+  }
+  .seccionPreg .seccionPreg__div .seccionPreg__div__p {
     height: 115px;
     width: 150px;
-    padding: 5px;
-    margin-top: 40px;
-    font-size: 12px;
+    font-size: 9px;
+  }
+  .hFooter .hFTitulo {
+    width: auto;
+  }
+  .hFooter .hFTitulo div h4 {
+    font-size: 30px;
+  }
+  .mFooter {
+    padding-top: 110px;
   }
 }/*# sourceMappingURL=estilo.css.map */

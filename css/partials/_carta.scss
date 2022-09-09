@@ -11,24 +11,33 @@
         margin-right: 60%;
     }
 
+    span{
+        margin-bottom: 50px;
+    }
+
     .carta{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap: 150px;
         margin: 50px 0px 60px 0px;
 
+        @mixin flex($display, $align, $direction, $gap){
+            display: $display;
+            align-items: $align;
+            flex-direction: $direction;
+            gap: $gap;
+        }
+
         .carta__tarjeta{
             width: 250px;
             height: 250px;
-            display: flex;
-            gap: 20px;
-            align-items: center;
-            flex-flow: column;
+            @include flex(flex, center, column, 20px);
             
             .carta__titulo {
                 text-align: center; 
-                font-size: 35px;  
+                font-size: 23px;  
                 color: #502314;
+                font-family: $mainFont;
                 }
 
             .carta__imagen {

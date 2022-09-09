@@ -3,7 +3,7 @@
 
     .card{
         background-color: $mainDarkColor;
-        margin: 5px;
+        margin: 12px;
         color: $mainColor;
 
         img{
@@ -18,6 +18,11 @@
         background-color: $mainColor;
         color: rgb(122, 75, 44);
         margin-top: 20px;
+
+        &:hover{
+            background-color: rgb(122, 75, 44);
+            color: $mainColor;
+        }
         }
     }
 }

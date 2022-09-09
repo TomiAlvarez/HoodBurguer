@@ -1,67 +1,87 @@
 @media screen and (max-width:900px) {
 
-    .divBoton{
-        justify-content: center;
-    }
+    .encabezado{
+
+        .divBoton{
+            justify-content: center;
+            }
+        }
 
     .tituloPrincipal{
         padding-top: 30px;
         padding-bottom: 0px;
     }
 
-    .seccionMenu{
-        margin-top: 30px;
-        margin-right: 60%;
-    }
-    
-    .carta{
-        gap: 50px 23px;
-        margin: 25px 0px 10px 0px;
-    }
+    .formularioMenu{
 
-    .carta__tarjeta{
-        gap: 0px;
-    }
+        .seccionMenu{
+            margin-top: 30px;
+            margin-right: 60%;
+            }
 
-    .carta__titulo {
-        text-align: center; 
-        font-size: 25px;  
-    }
-    
-    .carta__imagen {
-        height: 170px;
-    }
+        .carta{
+            gap: 50px 23px;
+            margin: 25px 0px 10px 0px;
 
+            .carta__tarjeta{
+                gap: 0px;
+        
+                .carta__titulo {
+                    text-align: center; 
+                    font-size: 20px;  
+                    }
+
+                .carta__imagen {
+                    height: 170px;
+                    }
+                }
+            }
+        }
+            
     .tarjetaNosotros{
         flex-flow: column;
         margin-bottom: 50px;
-    }
 
-    .tarjetaNosotros img{
-        width: 80%;
-        margin-left: 10%;
-        margin-top: 30px;
-    }
+        img{
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 30px;
+            }
 
-    .tarjetaNosotros p{
-        padding: 30px;
-    }
+        p{
+            padding: 30px;
+            }
+        }
 
-    hr{
-        margin-top: 90px;
-    }
+    .hFooter{
+    
+        hr {
+           width: 85%;
+            margin-left: 7.5%;
+            }
+    
+        .hFTitulo{
+            margin-left: 15%;
+            }
+    
+        .hFItems{
+            margin-left: 67%;
+            }
+    
+        }
 
     .mFooter{
-        grid-template-columns: 3fr 1fr;
-        margin-top: 30px;
-    }
 
-    .footerTitulo{
-        margin-left: 30px;
-    }
+        .footerTitulo{
+            margin-left: 15%;
 
-    .redes{
-        margin-left: 20px;
-    }
+            h3{
+                font-size: 15px;
+            }
+        }
 
-}
+        .redes{
+            margin-left: 42%;
+        }
+    }
+    }

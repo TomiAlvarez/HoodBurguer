@@ -30,7 +30,7 @@
             list-style-type: none;
             display: flex;
             gap: 20px;
-            font-size: 17px;
+            font-size: 16px;
 
         .item{
 
@@ -50,9 +50,10 @@
                     color: $secondaryColor;
                     text-decoration: none;
                     text-align: center;
-                    margin-top: 25px;
-                    font-family: Flame;
+                    margin-top: 20px;
+                    font-family: $mainFont;
                     padding: 3px;
+                    padding-bottom: 1px;
                     gap: 0;
                     border-radius: 35px;
 

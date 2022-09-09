@@ -1,29 +1,45 @@
 @media screen and (max-width:680px) {
 
-    .navbar-nav ul{
-        margin-right: 75%;
+    .encabezado{
+
+        .navbar-nav ul{
+            margin-right: 75%;
+            }
+    }   
+
+    .hFooter{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "hFTitulo" "hFItems" "hr";
+
+        .hFTitulo{
+            margin-left: 8%;
+        }
+
+        .hFItems{
+            margin-left: 8%;
+        }
     }
 
     .mFooter{
+        padding-top: 125px;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas:"redes"
                             "footerTitulo";
         font-size: 13px;
-    }
 
-    .footerTitulo{
-        margin-left: 0px;
-        margin: auto;
-        text-align: center;
-        width: 70%;
-    }
+        .footerTitulo{
+            margin-left: 20%;
+            text-align: center;
+            width: 60%;
+            }
 
-    .redes{
-        margin-left: 0px;
-        text-align: center;
-        justify-content: center;
-        margin-bottom: 40px;
+        .redes{
+            margin: 0;
+            margin-right: 7%;
+            text-align: center;
+            justify-content: center;
+            }
+        }
     }
-
-}
