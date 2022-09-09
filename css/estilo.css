@@ -23,11 +23,11 @@
 }
 *::-moz-selection {
   background-color: rgb(236, 235, 235);
-  color: rgb(122, 75, 44);
+  color: rgb(58, 36, 21);
 }
 *::selection {
   background-color: rgb(236, 235, 235);
-  color: rgb(122, 75, 44);
+  color: rgb(58, 36, 21);
 }
 
 body {
@@ -120,7 +120,7 @@ body {
   margin-top: 20px;
   font-family: Flame;
   padding: 3px;
-  padding-bottom: 1px;
+  padding-bottom: 2px;
   gap: 0;
   border-radius: 35px;
 }

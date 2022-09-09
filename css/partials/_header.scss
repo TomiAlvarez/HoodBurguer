@@ -32,14 +32,13 @@
             gap: 20px;
             font-size: 16px;
 
-        .item{
+            .item{
 
-            a{
-            background-color: $secondaryColor;
-            color: rgb(97, 60, 35);
-            }
-
-        }
+                a{
+                    background-color: $secondaryColor;
+                    color: rgb(97, 60, 35);
+                    }
+                }
     
             li{
                 display: flex;
@@ -53,7 +52,7 @@
                     margin-top: 20px;
                     font-family: $mainFont;
                     padding: 3px;
-                    padding-bottom: 1px;
+                    padding-bottom: 2px;
                     gap: 0;
                     border-radius: 35px;
 
