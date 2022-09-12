@@ -15,9 +15,18 @@
         display: flex;
         align-items: center;
         grid-area: boton;
+        font-family: $mainFont;
         
         a{
             text-decoration: none;
+
+            button{
+
+                span{
+                    font-size: 16px;
+                    font-weight: bold;
+                    }
+                }
             }
         }
 

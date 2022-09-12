@@ -17,7 +17,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "pregTitulo respuesta"
                              "pregTitulo respuesta";
-        box-shadow: 7px 13px 40px #000;
+        box-shadow: 7px 13px 40px rgba(0, 0, 0, 0.726);
 
     &:hover{
         box-shadow: none;

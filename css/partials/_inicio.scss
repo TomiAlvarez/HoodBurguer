@@ -5,24 +5,29 @@
         background-color: $mainDarkColor;
         margin: 12px;
         color: $mainColor;
+        box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.349);
 
         img{
             height: 55%;
             }
         }
 
-    .card-body{
+        .card-body{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
 
-        .btn{
-        width: 120px;
-        background-color: $mainColor;
-        color: rgb(122, 75, 44);
-        margin-top: 20px;
+            .btn{
+            width: 120px;
+            background-color: $mainColor;
+            color: rgb(122, 75, 44);
+            margin-top: 20px;
+            margin: auto;
 
-        &:hover{
-            background-color: rgb(122, 75, 44);
-            color: $mainColor;
-        }
+            &:hover{
+                background-color: rgb(122, 75, 44);
+                color: $mainColor;
+                }
+            }
         }
     }
-}

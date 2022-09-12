@@ -39,17 +39,15 @@
         }
             
     .tarjetaNosotros{
-        flex-flow: column;
-        margin-bottom: 50px;
+        flex-direction: column;
+        margin: 50px 2.5% 50px 2.5%;
 
         img{
-            width: 80%;
-            margin-left: 10%;
-            margin-top: 30px;
+            width: 100%;
             }
 
         p{
-            padding: 30px;
+            font-size: 18px;
             }
         }
 

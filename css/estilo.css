@@ -89,9 +89,14 @@ body {
   display: flex;
   align-items: center;
   grid-area: boton;
+  font-family: Flame;
 }
 .encabezado .divBoton a {
   text-decoration: none;
+}
+.encabezado .divBoton a button span {
+  font-size: 16px;
+  font-weight: bold;
 }
 .encabezado .navbar-nav {
   display: flex;
@@ -162,15 +167,22 @@ body {
   background-color: rgb(146, 92, 56);
   margin: 12px;
   color: rgb(255, 254, 221);
+  box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.349);
 }
 .inicio .card img {
   height: 55%;
+}
+.inicio .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 .inicio .card-body .btn {
   width: 120px;
   background-color: rgb(255, 254, 221);
   color: rgb(122, 75, 44);
   margin-top: 20px;
+  margin: auto;
 }
 .inicio .card-body .btn:hover {
   background-color: rgb(122, 75, 44);
@@ -210,7 +222,7 @@ body {
   font-family: Flame;
   gap: 0;
   margin-top: 28px;
-  padding-bottom: 8px;
+  padding-bottom: 7px;
 }
 .menu-fixed .navbar-menu ul li a:hover {
   border-bottom: 1px solid rgb(236, 235, 235);
@@ -250,6 +262,7 @@ body {
   font-size: 23px;
   color: #502314;
   font-family: Flame;
+  font-weight: bold;
 }
 .formularioMenu .carta .carta__tarjeta .carta__imagen {
   height: 220px;
@@ -262,19 +275,52 @@ body {
 }
 
 .tarjetaNosotros {
-  background-color: rgb(34, 34, 34);
+  background-color: wheat;
   display: flex;
-  margin: 50px 0px 170px 0px;
-  box-shadow: 7px 13px 40px #000;
+  margin: 50px 4.4% 100px 4.4%;
+  border-radius: 5px;
+  align-items: center;
+  box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.185);
 }
 .tarjetaNosotros p {
-  font-size: 20px;
-  padding: 50px;
-  color: rgb(236, 235, 235);
+  font-size: 18px;
+  padding: 20px;
+  color: rgb(58, 36, 21);
   text-align: center;
 }
 .tarjetaNosotros img {
   width: 500px;
+  border-radius: 5px 0 0 5px;
+}
+
+.itemsNosotros {
+  width: 100%;
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+}
+.itemsNosotros .card {
+  width: 800px;
+  display: flex;
+  background-color: wheat;
+  color: rgb(58, 36, 21);
+  margin: 20px;
+  box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.185);
+}
+.itemsNosotros .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.itemsNosotros .card .card-body .card-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+.itemsNosotros .card .card-body .card-text {
+  font-size: 20px;
+  text-align: center;
 }
 
 .seccionPreg {
@@ -295,7 +341,7 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "pregTitulo respuesta" "pregTitulo respuesta";
-  box-shadow: 7px 13px 40px #000;
+  box-shadow: 7px 13px 40px rgba(0, 0, 0, 0.726);
 }
 .seccionPreg .seccionPreg__div:hover {
   box-shadow: none;
@@ -343,7 +389,7 @@ body {
   margin-top: 100px;
   margin-bottom: 100px;
   color: white;
-  box-shadow: 7px 13px 40px #000;
+  box-shadow: 7px 13px 40px rgba(0, 0, 0, 0.842);
 }
 .form .detalles {
   padding: 50px;
@@ -543,6 +589,15 @@ body {
 }
 
 @media screen and (max-width: 1450px) {
+  .tarjetaNosotros {
+    margin: 50px 1.8% 100px 1.8%;
+  }
+  .tarjetaNosotros p {
+    font-size: 17px;
+  }
+  .itemsNosotros {
+    gap: 10px;
+  }
   .hFooter .hFItems {
     margin-left: 58%;
   }
@@ -561,6 +616,12 @@ body {
     grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: 200px;
          column-gap: 200px;
+  }
+  .tarjetaNosotros {
+    margin-bottom: 50px;
+  }
+  .tarjetaNosotros p {
+    font-size: 13px;
   }
   .tarjetaNosotros img {
     width: 400px;
@@ -589,6 +650,7 @@ body {
     padding-right: 10px;
     padding-left: 10px;
     text-align: start;
+    padding-bottom: 3px;
   }
   .form {
     width: 100%;
@@ -621,16 +683,14 @@ body {
     height: 170px;
   }
   .tarjetaNosotros {
-    flex-flow: column;
-    margin-bottom: 50px;
+    flex-direction: column;
+    margin: 50px 2.5% 50px 2.5%;
   }
   .tarjetaNosotros img {
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 30px;
+    width: 100%;
   }
   .tarjetaNosotros p {
-    padding: 30px;
+    font-size: 18px;
   }
   .hFooter hr {
     width: 85%;
@@ -655,6 +715,28 @@ body {
 @media screen and (max-width: 680px) {
   .encabezado .navbar-nav ul {
     margin-right: 75%;
+  }
+  .tarjetaNosotros {
+    margin: 50px 5% 50px 5%;
+  }
+  .tarjetaNosotros p {
+    font-size: 13px;
+  }
+  .itemsNosotros {
+    flex-direction: column;
+    align-items: center;
+  }
+  .itemsNosotros .card {
+    width: 90%;
+  }
+  .itemsNosotros .card .card-body {
+    gap: 10px;
+  }
+  .itemsNosotros .card .card-body .card-title {
+    font-size: 25px;
+  }
+  .itemsNosotros .card .card-body .card-text {
+    font-size: 15px;
   }
   .hFooter {
     grid-template-columns: 1fr;
