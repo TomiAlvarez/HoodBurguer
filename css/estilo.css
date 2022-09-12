@@ -667,7 +667,7 @@ body {
 }
 @media screen and (max-width: 900px) {
   .encabezado .divBoton {
-    justify-content: center;
+    margin-right: 50px;
   }
   .tituloPrincipal {
     padding-top: 30px;
@@ -782,9 +782,6 @@ body {
   }
 }
 @media screen and (max-width: 525px) {
-  .divBoton a button {
-    display: none;
-  }
   .formularioMenu .seccionMenu {
     margin-top: 18px;
     margin-right: 70%;
