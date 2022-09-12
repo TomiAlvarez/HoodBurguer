@@ -666,8 +666,8 @@ body {
   }
 }
 @media screen and (max-width: 900px) {
-  .encabezado .divBoton {
-    margin-right: 50px;
+  .encabezado .divLogo {
+    margin-right: 0;
   }
   .tituloPrincipal {
     padding-top: 30px;
