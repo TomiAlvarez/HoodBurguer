@@ -7,12 +7,28 @@
             }
     }   
 
-    .tarjetaNosotros{
-        margin: 50px 5% 50px 5%;
-
-        p{
-            font-size: 13px;
+    .menu-fixed{
+    
+        .navbar-menu{
+    
+            ul{
+    
+                li{
+    
+                    a{
+                        padding-bottom: 5px;
+    
+                    &:hover{
+                        border-bottom: 1px solid $secondaryColor;
+                    }
+                }
             }
+        }
+    }  
+    }
+
+    .tarjetaNosotros{
+        margin: 50px 5% 30px 5%;
         }
     
     .itemsNosotros{

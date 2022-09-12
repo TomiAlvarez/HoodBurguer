@@ -177,7 +177,11 @@ body {
   flex-direction: column;
   gap: 15px;
 }
+.inicio .card-body p {
+  font-family: Flame;
+}
 .inicio .card-body .btn {
+  font-family: Flame;
   width: 120px;
   background-color: rgb(255, 254, 221);
   color: rgb(122, 75, 44);
@@ -275,17 +279,18 @@ body {
 }
 
 .tarjetaNosotros {
-  background-color: wheat;
+  font-family: Flame;
+  background-color: rgb(58, 36, 21);
   display: flex;
-  margin: 50px 4.4% 100px 4.4%;
+  margin: 50px 4.8% 100px 4.8%;
   border-radius: 5px;
   align-items: center;
   box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.185);
 }
 .tarjetaNosotros p {
-  font-size: 18px;
+  font-size: 16px;
   padding: 20px;
-  color: rgb(58, 36, 21);
+  color: wheat;
   text-align: center;
 }
 .tarjetaNosotros img {
@@ -319,6 +324,7 @@ body {
   font-weight: bold;
 }
 .itemsNosotros .card .card-body .card-text {
+  font-family: Flame;
   font-size: 20px;
   text-align: center;
 }
@@ -593,7 +599,7 @@ body {
     margin: 50px 1.8% 100px 1.8%;
   }
   .tarjetaNosotros p {
-    font-size: 17px;
+    font-size: 15px;
   }
   .itemsNosotros {
     gap: 10px;
@@ -621,7 +627,7 @@ body {
     margin-bottom: 50px;
   }
   .tarjetaNosotros p {
-    font-size: 13px;
+    font-size: 12px;
   }
   .tarjetaNosotros img {
     width: 400px;
@@ -654,6 +660,9 @@ body {
   }
   .form {
     width: 100%;
+  }
+  .tarjetaNosotros p {
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -691,7 +700,7 @@ body {
     border-radius: 5px 5px 0 0;
   }
   .tarjetaNosotros p {
-    font-size: 18px;
+    font-size: 15px;
   }
   .hFooter hr {
     width: 85%;
@@ -717,11 +726,14 @@ body {
   .encabezado .navbar-nav ul {
     margin-right: 75%;
   }
-  .tarjetaNosotros {
-    margin: 50px 5% 50px 5%;
+  .menu-fixed .navbar-menu ul li a {
+    padding-bottom: 5px;
   }
-  .tarjetaNosotros p {
-    font-size: 13px;
+  .menu-fixed .navbar-menu ul li a:hover {
+    border-bottom: 1px solid rgb(236, 235, 235);
+  }
+  .tarjetaNosotros {
+    margin: 50px 5% 30px 5%;
   }
   .itemsNosotros {
     flex-direction: column;
@@ -817,6 +829,9 @@ body {
   .form form button {
     margin-top: 50px;
     font-size: 16px;
+  }
+  .tarjetaNosotros p {
+    font-size: 10px;
   }
   .seccionPreg .seccionPreg__div {
     width: 320px;

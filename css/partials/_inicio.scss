@@ -17,7 +17,12 @@
             flex-direction: column;
             gap: 15px;
 
+            p{
+                font-family: $mainFont;
+            }
+
             .btn{
+            font-family: $mainFont;
             width: 120px;
             background-color: $mainColor;
             color: rgb(122, 75, 44);
