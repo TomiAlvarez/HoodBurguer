@@ -688,6 +688,7 @@ body {
   }
   .tarjetaNosotros img {
     width: 100%;
+    border-radius: 5px 5px 0 0;
   }
   .tarjetaNosotros p {
     font-size: 18px;
