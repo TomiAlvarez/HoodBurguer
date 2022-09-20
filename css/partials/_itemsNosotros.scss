@@ -29,6 +29,19 @@
                 font-size: 20px;
                 text-align: center;
             }
+
+            button{
+                font-family: $mainFont;
+                width: 110px;
+                height: 50px;
+                background-color: tomato;
+                border: none;
+                border-radius: 5px;
+
+                &:hover{
+                    background-color: rgb(221, 92, 69);
+                }
+            }
+            }
         }
     }
-}

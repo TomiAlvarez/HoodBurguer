@@ -328,6 +328,17 @@ body {
   font-size: 20px;
   text-align: center;
 }
+.itemsNosotros .card .card-body button {
+  font-family: Flame;
+  width: 110px;
+  height: 50px;
+  background-color: tomato;
+  border: none;
+  border-radius: 5px;
+}
+.itemsNosotros .card .card-body button:hover {
+  background-color: rgb(221, 92, 69);
+}
 
 .seccionPreg {
   font-family: Flame;
@@ -750,6 +761,11 @@ body {
   }
   .itemsNosotros .card .card-body .card-text {
     font-size: 15px;
+  }
+  .itemsNosotros .card .card-body button {
+    width: 90px;
+    height: 40px;
+    font-size: 14px;
   }
   .hFooter {
     grid-template-columns: 1fr;
