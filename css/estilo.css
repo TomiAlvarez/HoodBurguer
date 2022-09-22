@@ -605,10 +605,12 @@ body {
   background: rgb(66, 103, 178);
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1765px) {
   .tarjetaNosotros {
     margin: 50px 1.8% 100px 1.8%;
   }
+}
+@media screen and (max-width: 1450px) {
   .tarjetaNosotros p {
     font-size: 15px;
   }
